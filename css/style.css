@@ -7,6 +7,7 @@
     --light-slate: #8E8F99;
     --cornflower: #E7E9FC;
     --cloud: #F4F4FD;
+    --grey: #2E2F42B2;
 }
 body {
     font-family: Roboto, sans-serif;
@@ -26,9 +27,7 @@ body {
 
 .header-box {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    /* height: 72px; */
     
 }
 
@@ -48,7 +47,6 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    /* display: flex; */
     margin-right: 70px;
     padding: 24px 0;
 
@@ -96,7 +94,7 @@ body {
 
 .top-menu-link:hover,
 .top-menu-link:focus {
-    /* color: var(--slate); */
+    
     color: var(--primary-brand-color-iris);
 }
 
@@ -137,10 +135,16 @@ body {
     margin-bottom: 48px;
 }
 
-.baner {
-    background-color: var(--dark-navy-blue);
-    text-align: center;
 
+.baner-grey {
+    text-align: center;
+    
+    background: linear-gradient(to right, var(--grey), var(--grey)), url(../images/people-office-1.jpg), no-repeat;
+    background-position: center;
+    
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 192px;
     padding-bottom: 192px;
 }
@@ -199,7 +203,7 @@ body {
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -318,10 +322,6 @@ body {
 
 /* Portfolio page style */
 
-.filter .container {
-    box-sizing: content-box;
-}
-
 .filter-items-link {
     
     text-decoration: none;
@@ -367,9 +367,13 @@ body {
     padding-bottom: 32px;
 
     border-bottom: 0.5px solid #F4F4FD;
+}
+
+.examples-list:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 
 
