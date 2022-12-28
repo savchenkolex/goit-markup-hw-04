@@ -166,10 +166,28 @@ body {
 
 .features .features-list {
     margin-right: 24px;
+    
 }
 
 .features .features-list:last-child {
     margin-right: 0;
+}
+
+.features-icon-box {
+    background-color: var(--cloud);
+    
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-features {
+    fill: var(--dark-navy-blue);
+    width: 64px;
+    height: 64px;
 }
 
 .header-items {
@@ -265,6 +283,7 @@ body {
     display: block;
 }
 
+
 /* Buttons */
 .button {
     font-size: 16px;
@@ -277,7 +296,7 @@ body {
     border: none;
     border-radius: 4px;
     padding: 16px 32px;
-
+    
 }
 
 .filter .button {
@@ -318,6 +337,41 @@ body {
 
 .filter-box .button-list:last-child {
     margin-right: 0;
+}
+/* Customers */
+
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-logo-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customer-logo-box {
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.customer-logo-item {
+    fill: var(--light-slate);
+    
+    width: 104px;
+    height: 56px;
+}
+
+.customer-logo-item:hover {
+    width: 104px;
+    height: 56px;
+    fill: var(--primary-brand-color-iris)
 }
 
 /* Portfolio page style */
