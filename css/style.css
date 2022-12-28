@@ -179,9 +179,8 @@ body {
     width: 264px;
     height: 112px;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 8px;
+    padding: 24px 100px;
 }
 
 .icon-features {
@@ -283,6 +282,35 @@ body {
     display: block;
 }
 
+.social-flex {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.social-link {
+
+    background-color: var(--primary-brand-color-iris);
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--button-dark-blue);
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--cloud);
+}
+
 
 /* Buttons */
 .button {
@@ -350,7 +378,8 @@ body {
     gap: 24px;
 }
 
-.customer-logo-box {
+.customer-pages {
+    display: block;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
     width: 168px;
@@ -359,19 +388,19 @@ body {
     padding-bottom: 16px;
     padding-right: 32px;
     padding-left: 32px;
+    fill: var(--light-slate);
 }
 
 .customer-logo-item {
-    fill: var(--light-slate);
-    
+   
     width: 104px;
     height: 56px;
 }
 
-.customer-logo-item:hover {
-    width: 104px;
-    height: 56px;
-    fill: var(--primary-brand-color-iris)
+.customer-pages:hover,
+.customer-pages:focus {
+    fill: var(--primary-brand-color-iris);
+    border: 1px solid var(--primary-brand-color-iris)
 }
 
 /* Portfolio page style */
@@ -440,6 +469,11 @@ body {
     padding-bottom: 100px;
 }
 
+.dark-footer .container {
+    display: flex;
+    gap: 120px;
+}
+
 .footer-slogan {
     width: 264px;
     margin: 0;
@@ -448,4 +482,42 @@ body {
 .slogan-text {
     margin: 0;
     margin-top: 16px;
+}
+
+.header-footer {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    margin-top: 0;
+    margin-bottom: 16px;
+
+}
+
+.media-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.media-links {
+    display: block;
+    background-color: #FFFFFF1A;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.media-links:hover,
+.mdeia-links:focus {
+    background-color: var(--success);
+    
+}
+
+.footer-icons {
+    width: 24px;
+    height: 24px;
+    fill: var(--cloud);
 }
