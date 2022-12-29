@@ -166,6 +166,7 @@ body {
 
 .features .features-list {
     margin-right: 24px;
+    width: calc((100% - 72px) / 4);
     
 }
 
@@ -180,7 +181,11 @@ body {
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
-    padding: 24px 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 24px 100px; */
 }
 
 .icon-features {
@@ -237,7 +242,6 @@ body {
     padding-top: 0;
 }
 
-
 .our-services {
     display: flex;
     justify-content: center;
@@ -293,7 +297,9 @@ body {
 
     background-color: var(--primary-brand-color-iris);
 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -378,16 +384,23 @@ body {
     gap: 24px;
 }
 
+.customer-logo-box {
+    width: calc((100% - 120px) / 6);
+}
+
 .customer-pages {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
-    width: 168px;
     height: 88px;
+    /* width: 168px;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-right: 32px;
-    padding-left: 32px;
+    padding-left: 32px; */
+    
     fill: var(--light-slate);
 }
 
@@ -406,8 +419,15 @@ body {
 /* Portfolio page style */
 
 .filter-items-link {
-    
+    display: block;
     text-decoration: none;
+}
+
+.filter-items-link:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 
 .header-items-link {
@@ -431,8 +451,6 @@ body {
 .examples .examples-list {
     margin-right: 24px;
     margin-bottom: 48px;
-
-    
 }
 
 .examples .examples-list:nth-child(3n+3) {
@@ -449,15 +467,11 @@ body {
     padding-top: 30px;
     padding-bottom: 32px;
 
-    border-bottom: 0.5px solid #F4F4FD;
+    border: 0.5px solid #F4F4FD;
+    border-top: none;
 }
 
-.examples-list:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-    
-}
+
 
 
 /* Footer */
@@ -501,13 +515,15 @@ body {
 }
 
 .media-links {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF1A;
 
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 .media-links:hover,
